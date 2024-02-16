@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var login: LoginViewModel
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if login.auth == .Success {
+            LandingPageView()
+        } else {
+            LoginPageView()
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
+
