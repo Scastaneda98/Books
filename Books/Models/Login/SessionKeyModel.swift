@@ -8,5 +8,5 @@
 import Foundation
 
 struct SessionKeyModel: Decodable {
-    var sesskey: String
+    let sesskey: String
 }
