@@ -8,6 +8,6 @@
 import Foundation
 
 struct AuthKeyModel: Decodable {
-    var oauthkey: String
-    var o_u: String
+    let oauthkey: String
+    let o_u: String
 }

@@ -23,6 +23,11 @@
 		0A9CC5622B80052F00B3D439 /* AuthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5612B80052F00B3D439 /* AuthStatus.swift */; };
 		0A9CC5652B8005A500B3D439 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5642B8005A500B3D439 /* LoginPageView.swift */; };
 		0A9CC5682B80128A00B3D439 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5672B80128A00B3D439 /* LandingPageView.swift */; };
+		0A9CC56C2B804C3B00B3D439 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC56B2B804C3B00B3D439 /* LandingViewModel.swift */; };
+		0A9CC56E2B804CC300B3D439 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC56D2B804CC300B3D439 /* BooksModel.swift */; };
+		0A9CC5702B804E2100B3D439 /* AllBooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC56F2B804E2100B3D439 /* AllBooksModel.swift */; };
+		0A9CC5722B80528900B3D439 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5712B80528900B3D439 /* BookModel.swift */; };
+		0A9CC5742B8052BE00B3D439 /* BookInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5732B8052BE00B3D439 /* BookInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,11 @@
 		0A9CC5612B80052F00B3D439 /* AuthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStatus.swift; sourceTree = "<group>"; };
 		0A9CC5642B8005A500B3D439 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		0A9CC5672B80128A00B3D439 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		0A9CC56B2B804C3B00B3D439 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		0A9CC56D2B804CC300B3D439 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		0A9CC56F2B804E2100B3D439 /* AllBooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksModel.swift; sourceTree = "<group>"; };
+		0A9CC5712B80528900B3D439 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		0A9CC5732B8052BE00B3D439 /* BookInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +162,7 @@
 		0A9CC54F2B7F0B8200B3D439 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0A9CC56A2B8019EE00B3D439 /* Books */,
 				0A9CC5592B7F105D00B3D439 /* Login */,
 			);
 			path = ViewModels;
@@ -169,6 +180,7 @@
 		0A9CC5512B7F0B9E00B3D439 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0A9CC5692B8019DF00B3D439 /* Books */,
 				0A9CC5522B7F0E1700B3D439 /* Login */,
 			);
 			path = Models;
@@ -214,6 +226,25 @@
 			isa = PBXGroup;
 			children = (
 				0A9CC5672B80128A00B3D439 /* LandingPageView.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		0A9CC5692B8019DF00B3D439 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CC56D2B804CC300B3D439 /* BooksModel.swift */,
+				0A9CC56F2B804E2100B3D439 /* AllBooksModel.swift */,
+				0A9CC5712B80528900B3D439 /* BookModel.swift */,
+				0A9CC5732B8052BE00B3D439 /* BookInfoModel.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		0A9CC56A2B8019EE00B3D439 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CC56B2B804C3B00B3D439 /* LandingViewModel.swift */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -348,16 +379,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9CC5722B80528900B3D439 /* BookModel.swift in Sources */,
 				0A9CC5262B7ED06900B3D439 /* ContentView.swift in Sources */,
 				0A9CC5562B7F0F6100B3D439 /* AuthKeyModel.swift in Sources */,
 				0A9CC55B2B7F107700B3D439 /* LoginViewModel.swift in Sources */,
 				0A9CC5602B7FE8F700B3D439 /* RequireType.swift in Sources */,
 				0A9CC5542B7F0E3D00B3D439 /* AppKeyModel.swift in Sources */,
+				0A9CC5742B8052BE00B3D439 /* BookInfoModel.swift in Sources */,
 				0A9CC5582B7F100500B3D439 /* SessionKeyModel.swift in Sources */,
+				0A9CC5702B804E2100B3D439 /* AllBooksModel.swift in Sources */,
 				0A9CC5242B7ED06900B3D439 /* BooksApp.swift in Sources */,
 				0A9CC5682B80128A00B3D439 /* LandingPageView.swift in Sources */,
 				0A9CC5622B80052F00B3D439 /* AuthStatus.swift in Sources */,
+				0A9CC56E2B804CC300B3D439 /* BooksModel.swift in Sources */,
 				0A9CC5652B8005A500B3D439 /* LoginPageView.swift in Sources */,
+				0A9CC56C2B804C3B00B3D439 /* LandingViewModel.swift in Sources */,
 				0A9CC55E2B7FE7A400B3D439 /* APIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
