@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3220C12B83F3A300AC366B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3220C02B83F3A300AC366B /* Extensions.swift */; };
 		0A9CC5242B7ED06900B3D439 /* BooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5232B7ED06900B3D439 /* BooksApp.swift */; };
 		0A9CC5262B7ED06900B3D439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CC5252B7ED06900B3D439 /* ContentView.swift */; };
 		0A9CC5282B7ED06A00B3D439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9CC5272B7ED06A00B3D439 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3220C02B83F3A300AC366B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0A9CC5202B7ED06900B3D439 /* Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Books.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9CC5232B7ED06900B3D439 /* BooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApp.swift; sourceTree = "<group>"; };
 		0A9CC5252B7ED06900B3D439 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				0A9CC55D2B7FE7A400B3D439 /* APIConfig.swift */,
 				0A9CC55F2B7FE8F700B3D439 /* RequireType.swift */,
 				0A9CC5612B80052F00B3D439 /* AuthStatus.swift */,
+				0A3220C02B83F3A300AC366B /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				0A9CC5622B80052F00B3D439 /* AuthStatus.swift in Sources */,
 				0A9CC56E2B804CC300B3D439 /* BooksModel.swift in Sources */,
 				0A9CC5652B8005A500B3D439 /* LoginPageView.swift in Sources */,
+				0A3220C12B83F3A300AC366B /* Extensions.swift in Sources */,
 				0A9CC56C2B804C3B00B3D439 /* LandingViewModel.swift in Sources */,
 				0A9CC55E2B7FE7A400B3D439 /* APIConfig.swift in Sources */,
 			);
