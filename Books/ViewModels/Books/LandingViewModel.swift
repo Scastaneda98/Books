@@ -15,26 +15,19 @@ class LandingViewModel: ObservableObject {
     }
     
     private func getAllBooks() {
-        if let sessKey = UserDefaults.standard.object(forKey: "sessKey") as? String, let userId = UserDefaults.standard.object(forKey: "userId") as? String {
-            let parameters = ["req":RequireType.getAllBooks.rawValue, "sesskey":sessKey, "o_u": userId, "u_c": userId]
-            guard let apiURL = APIConfig.shared.createRequestURL(parameters: parameters) else { return }
-
-            var request = URLRequest(url: apiURL)
-            request.httpMethod = "POST"
+        guard let sessKey = UserDefaults.standard.object(forKey: UserDefaults.sessionKeyKey) as? String, let userId = UserDefaults.standard.object(forKey: UserDefaults.userIdKey) as? String else { return }
+        let parameters = ["req":RequireType.getAllBooks.rawValue, "sesskey":sessKey, "o_u": userId, "u_c": userId]
+        APIConfig.shared.fetchData(with: parameters, httpMethod: .post) { data, response, error in
+            guard let data = data else { return }
             
-            URLSession.shared.dataTask(with: request) { data, _, _ in
-                guard let data = data else { return }
-                
-                do {
-                    let json = try JSONDecoder().decode(BooksModel.self, from: data)
-                    DispatchQueue.main.async {
-                        self.books = json.allBooks.books
-                    }
-                } catch let error as NSError {
-                    print("Error:", error.localizedDescription)
+            do {
+                let json = try JSONDecoder().decode(BooksModel.self, from: data)
+                DispatchQueue.main.async {
+                    self.books = json.allBooks.books
                 }
-            }.resume()
+            } catch let error as NSError {
+                print("Error:", error.localizedDescription)
+            }
         }
-        
     }
 }
