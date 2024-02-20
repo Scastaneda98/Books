@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginPageView: View {
-    @State private var email = "android.developer@timetonic.com"//String()
-    @State private var password = "Android.developer1"//String()
+    @State private var email = String()
+    @State private var password = String()
     @EnvironmentObject var loginViewModel: LoginViewModel
     
     var body: some View {
